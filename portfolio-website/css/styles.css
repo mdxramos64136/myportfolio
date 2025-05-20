@@ -1,9 +1,11 @@
 .header {
+  position: relative; /* Essential for the overlay positioning */
   background: #151515 url("../images/intro-bg.jpg") no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
 }
 
+/* Overlay for the header */
 .header::after {
   content: "";
   position: absolute;
@@ -11,15 +13,21 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.4); /* Less opacity for brighter content */
+  z-index: 1;
+  pointer-events: none; /* So overlay does not block interactions */
 }
 
+/* Main content above overlay */
 .header .text-container {
-  z-index: 10;
+  position: relative;
+  z-index: 2;
+  text-align: center;
 }
 
 .header .roles {
-  font-family: "lora-regula", serif;
+  font-family: "Lora", serif;
+  color: #fff !important;
 }
 
 .header .social {
@@ -43,9 +51,11 @@
 }
 
 .services {
+  position: relative; /* Needed for overlay positioning */
   background: url("../images/bg.jpg") no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
+  /* Do NOT use text-bg-dark here, it can mess with colors */
 }
 
 .services::after {
@@ -55,11 +65,58 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.7); /* Strong overlay for image */
+  z-index: 1;
+  pointer-events: none;
 }
 
-.services .container {
-  z-index: 10;
+/* This puts all content above the overlay! */
+.services > .row,
+.services .container,
+.service-card,
+.service-card *,
+.service-card i,
+.service-card h3,
+.service-card p,
+.service-card hr {
+  position: relative !important;
+  z-index: 2 !important;
+  color: inherit;
+  /* If needed, force the vivid color: */
+}
+
+.text-primary {
+  color: #e6007a !important; /* Vivid pink */
+}
+
+.text-white {
+  color: #fff !important;
+}
+
+.service-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center; /* Center text for h3, p, etc. */
+}
+
+.service-card p {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  color: #fff !important;
+}
+
+.service-card p,
+.service-card h3,
+.service-card hr {
+  color: #fff !important;
+}
+
+/* hr lines use background-color, not color: */
+.service-card hr {
+  border-top: 2px solid #e6007a !important; /* Pink line */
+  opacity: 1 !important;
 }
 
 @media (max-width: 767px) {

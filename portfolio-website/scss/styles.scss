@@ -30,7 +30,7 @@
 .about-img {
   width: 350px;
   height: 350px;
-  object-fit: cover;
+  object-fit: cover; // ensure that the image maintains its proportion within the container
 }
 
 //hover effect on Lightbox (Portfolio section)
