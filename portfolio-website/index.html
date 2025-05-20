@@ -1,0 +1,512 @@
+<!--
+* content will comes up over the image. It won´t scroll'
+* <h1 class="(...)" id="typing-text"> I put an id on h1 besause
+I will grab it on JS to make a typing effect. 
+* background-attachment: fixed;
+* Font Awesome - check all icons available at https://fontawesome.com/
+* There are also other alternatives, such as https://devicon.dev/:
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="css/font-awesome.css"
+    />
+    <link
+      rel="stylesheet"
+      href="css/bootstrap.css"
+    />
+    <link
+      rel="stylesheet"
+      href="css/lightbox.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="css/styles.css"
+    />
+    <title>Marcel Ramos | Web Developer</title>
+  </head>
+  <body>
+    <header class="header vh-100 text-center position-relative">
+      <div
+        class="text-container position-relative d-flex flex-column justify-content-center align-items-center h-100"
+      >
+        <!--h-100 = 100% of the container height (vh-100)-->
+        <h5 class="text-primary fs-3 fw-bold text-uppercase">Welcome</h5>
+        <h1
+          class="display-1 fw-bold text-white"
+          id="typing-text"
+        ></h1>
+        <p class="roles text-white text-uppercase fs-4">
+          <span>Front-End Developer</span>
+          
+        </p>
+
+        <a
+          href="#about"
+          class="btn btn-outline-light btn-lg mt-3"
+        >
+          <div class="d-flex">
+            <!--little chrevon icon-->
+            <div class="me-3">
+              <!--put some space between the chevron (arco p/ baixo) and the text-->
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <!--me-3-->
+            <div class="text-start">
+              <span>More About Me</span>
+            </div>
+          </div>
+          <!--.d-flex-->
+        </a>
+
+        <div class="social d-flex gap-3 position-absolute">
+          <a href="#">
+            <i class="fab fa-linkedin fa-3x text-white"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-facebook fa-3x text-white"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-youtube fa-3x text-white"></i>
+          </a>
+          <a href="https://github.com/mdxramos64136">
+            <i class="fab fa-github fa-3x text-white"></i>
+          </a>
+        </div>
+      </div>
+      <!--text-container-->
+    </header>
+
+    <!-- About -->
+    <section
+      id="about"
+      class="about bg-light py-5"
+    >
+      <div class="container">
+        <div class="text-center">
+          <h4 class="text-uppercase fw-bold text-primary">About Me</h4>
+          <hr class="w-25 mx-auto" />
+          <!--<hr> = horizontal rule-->
+          <h2 class="mb-4">Let me introduce myself.</h2>
+        </div>
+        <div class="about-content d-flex gap-5 align-items-center h-100">
+          <!--If the image is not square, it will be oval-->
+          <img
+            src="images/me.jpg"
+            alt=""
+            class="about-img img-fluid rounded-circle"
+          />
+          <p class="lead">
+            I graduated in December 2024 from Fanshawe College with an Advanced Diploma 
+            in Computer Programming and Analysis. Since then, I’ve been focusing on front-end 
+            development, particularly with React.
+
+            To sharpen my skills, I’ve been taking online courses on Udemy and 
+            building small websites to showcase what I can do with 
+            JavaScript, HTML, CSS, and React. 
+            I'm also expanding my knowledge of MySQL to strengthen my 
+            understanding of full-stack development.
+
+            I'm currently looking for my first professional opportunity—paid or 
+            unpaid—where I can grow, contribute, and continue learning through 
+            real-world experience.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Profile & Skills -->
+    <section class="profile my-6">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h3 class="text-uppercase fw-bold">Profile</h3>
+            <p>
+              Here is some more info about myself to help you get to know me
+              better.
+            </p>
+            <ul class="list-group list-group-flush">
+              <!--list-group-flush will take away the outside border-->
+              <li class="list-group-item mb-3">
+                <h5 class="text-transform">
+                  <i class="fas fa-user text-primary"></i>
+                  Full Name:
+                </h5>
+                <p>Marcel Ramos</p>
+              </li>
+              <!-- <li class="list-group-item mb-3">
+                <h5 class="text-transform">
+                  <i class="fas fa-calendar text-primary"></i> Birth Date:
+                </h5>
+                <p>August 10, 1981</p>
+              </li> -->
+              <li class="list-group-item mb-3">
+                <h5 class="text-transform">
+                  <i class="fas fa-building text-primary"></i>
+                  Current Position:
+                </h5>
+                <p>Seeking for the first oportunity</p>
+              </li>
+              <li class="list-group-item mb-3">
+                <h5 class="text-transform">
+                  <i class="fas fa-home text-primary"></i>
+                  Website:
+                </h5>
+                <p>www.marcelramos.com</p>
+              </li>
+              <li class="list-group-item mb-3">
+                <h5 class="text-transform">
+                  <i class="fas fa-envelope text-primary"></i>
+                  Email:
+                </h5>
+                <p>marcel@gmail.com</p>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <h3 class="text-uppercase fw-bold">Skills</h3>
+            <p>
+              Here is a list of my skills with these dumb percentages that don't
+              mean anything
+            </p>
+
+            <!--Javascript-->
+            <img
+              class="icons-size"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg" 
+            />
+
+            <!--HTML-->
+            <img
+              class="icons-size"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+            />
+
+            <!--CSS-->
+            <img
+              class="icons-size"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+            />
+
+            <!--Bootstrap-->
+            <img
+              class="icons-size"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg"
+            />
+
+            <img
+              class="icons-size"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jquery/jquery-plain-wordmark.svg"
+            />
+
+            <!--SQL-->
+            <img
+              class="icons-size"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg"
+            />
+
+        <!--Buttons-->
+        <div class="row mt-5 text-center">
+          <div class="col-12">
+            <a
+              href="#"
+              class="btn btn-outline-dark btn-lg text-uppercase px-5 mx-3 my-2"
+            >
+              Hire Me Now
+            </a>
+            <a
+              href="#"
+              class="btn btn-dark btn-lg text-uppercase px-5 mx-3 my-2"
+            >
+              Download CV
+            </a>
+          </div>
+        </div>
+      </div>
+    </section><!--Profile and skills-->
+    
+    <!--Portfolio-->
+    <section class="portfolio py-5 bg-light">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h4 class="text-uppercase fw-bold text-primary">
+            Portfolio
+          </h4>
+          <hr class="w-25 mx-auto"/> <!--It´s just a line-->
+          <h2 class="mb-4">Check Out My Work</h2>
+          <p class="lead">Here is a small sample of my projects</p>
+        </div><!--text-center mb-5-->
+        <div class="row">
+          <div class="col-md-6 mb-4"><!--2 projects/row , (6 columns each one)-->
+            <div class="project shadow-lg rounded-5">
+              <!--Img will have a link around them because it needs to open a lightbox (add data-lightbox prop.)
+              - data-title="Clickboard Landing Page" is the name of the page
+              - data-lightbox="images" will put the projects in the same group (images) and add 
+              arrow <> to navigate among them. If you had put a different name it would have the arrows-->
+              <a href="./images/project1d.jpg" data-lightbox="images" data-title="TubeClass">
+                <img src="./images/project1.jpg" alt="" class="img-fluid rounded-3 img-size"><!--Image will also be shown on the page once it gets clicked-->
+              </a>
+            </div>
+          </div><!--col-md-6-->
+          
+          <div class="col-md-6 mb-4"><!--2 projects/row , (6 columns each one)-->
+            <div class="project shadow-lg rounded-5">
+              <a href="./images/project2.jpg" data-lightbox="images" data-title="Loop Studios Web Site">
+                <img src="./images/project2.jpg" alt="" class="img-fluid rounded-3"><!--Image will also be shown on the page once it gets clicked-->
+              </a>
+            </div>
+          </div><!--col-md-6-->
+
+          <div class="col-md-6 mb-4">
+            <div class="project shadow-lg rounded-5">
+              <a href="./images/project3.jpg" data-lightbox="images" data-title="Shortly Website">
+                <img src="./images/project3.jpg" alt="" class="img-fluid rounded-3"><!--Image will also be shown on the page once it gets clicked-->
+              </a>
+            </div>
+          </div><!--col-md-6-->
+
+          <div class="col-md-6 mb-4">
+            <div class="project shadow-lg rounded-5">
+              <a href="./images/project4.jpg" data-lightbox="images" data-title="Flyo Website">
+                <img src="./images/project4.jpg" alt="" class="img-fluid rounded-3"><!--Image will also be shown on the page once it gets clicked-->
+              </a>
+            </div>
+          </div><!--col-md-6-->
+
+          <div class="col-md-6 mb-4">
+            <div class="project shadow-lg rounded-5">
+              <a href="./images/project5.jpg" data-lightbox="images" data-title="Bookmark Website">
+                <img src="./images/project5.jpg" alt="" class="img-fluid rounded-3"><!--Image will also be shown on the page once it gets clicked-->
+              </a>
+            </div>
+          </div><!--col-md-6-->
+
+          <div class="col-md-6 mb-4">
+            <div class="project shadow-lg rounded-5">
+              <a href="./images/project6.jpg" data-lightbox="images" data-title="Grid Layaout">
+                <img src="./images/project6.jpg" alt="" class="img-fluid rounded-3"><!--Image will also be shown on the page once it gets clicked-->
+              </a>
+            </div>
+          </div><!--col-md-6-->
+        </div><!--row-->
+      </div><!--Container-->
+    </section>
+
+    <!--Styleshout-->
+    <section class="styleshout text-bg-dark bg-gradient p-6 text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1>Shoutout to Styleshout</h1>
+            <hr class="w-25 mx-auto">
+            <p class="lead mb-5">
+               Styleshout is a place for Free HTML5 Templates and Free Wordpress.
+              This design was inspired by one of their templates. Check them out
+              for templates to use and get inspiration from.
+            </p>
+            <a
+              href="https://styleshout.com"
+              target="_blank"
+              class="btn btn-primary btn-lg text-uppercase px-5 mx-3 my-2"
+            >
+              Visit StyleShout
+            </a>
+            </p>
+          </div><!--col-12-->
+        </div><!--row-->
+      </div><!--container-->
+    </section><!--Styleshout-->    
+
+    <!-- Services-->
+    <section class="services text-bg-dark py-5 position-relative">
+      <div class="container position-relative">
+        <div class="text-center mb-5">
+          <h4 class="text-uppercase fw-bold text-primary">Services</h4>
+          <hr class="w-25 mx-auto" />
+          <h2 class="mb-4">What Can I Do For You?</h2>
+          <p class="lead">
+            Here are some of the services that I offer when it comes to web
+            development and business.
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-md-4 text-center">
+            <i class="fas fa-globe fa-3x text-primary mb-3"></i>
+            <h3 class="fs-3">Web Design</h3>
+            <hr class="w-25 mx-auto" />
+            <p class="fs-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quis
+              autem quam, illo quisquam eligendi illum delectus nam amet porro!
+            </p>
+          </div>
+
+          <div class="col-md-4 text-center">
+            <i class="fas fa-code fa-3x text-primary mb-3"></i>
+            <h3 class="fs-3">Web Development</h3>
+            <hr class="w-25 mx-auto" />
+            <p class="fs-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quis
+              autem quam, illo quisquam eligendi illum delectus nam amet porro!
+            </p>
+          </div>
+
+          <div class="col-md-4 text-center">
+            <i class="fas fa-shopping-cart fa-3x text-primary mb-3"></i>
+            <h3 class="fs-3">Advetising & SEO</h3>
+            <hr class="w-25 mx-auto" />
+            <p class="fs-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quis
+              autem quam, illo quisquam eligendi illum delectus nam amet porro!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- Stats -->
+    <section class="stats py-5 text-bg-secondary">
+      <div class="container">
+        <div class="row g-0">
+          <div class="col-md-4 col-lg-2"><!--On medium screems will appear 3 slices (2 rows). on large, 6 slices (1 row)-->
+            <div class="stat text-center border-end border-dark">
+              <i class="fas fa-users fa-3x mb-3"></i>
+              <p class="fs-1">500+</p><!--fs = font size-->
+              <h3 class="fs-6 text-uppercase">Clients</h3>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-2">
+            <div class="stat text-center border-end border-dark">
+              <i class="fas fa-project-diagram fa-3x mb-3"></i>
+              <p class="fs-1">700+</p>
+              <h3 class="fs-6 text-uppercase">Projects</h3>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-2">
+            <div class="stat text-center border-end border-dark">
+              <i class="fas fa-clock fa-3x mb-3"></i>
+              <p class="fs-1">16+</p>
+              <h3 class="fs-6 text-uppercase">Years</h3>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-2">
+            <div class="stat text-center border-end border-dark">
+              <i class="fas fa-book fa-3x mb-3"></i>
+              <p class="fs-1">25</p>
+              <h3 class="fs-6 text-uppercase">Publications</h3>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-2">
+            <div class="stat text-center border-end border-dark">
+              <i class="fas fa-youtube fa-3x mb-3"></i>
+              <p class="fs-1">2.06M</p>
+              <h3 class="fs-6 text-uppercase">Subscribers</h3>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-2">
+            <div class="stat text-center border-end border-dark">
+              <i class="fas fa-graduation-cap fa-3x mb-3"></i>
+              <p class="fs-1">1M+</p>
+              <h3 class="fs-6 text-uppercase">Students</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!--Stats-->
+
+ <!-- Contact -->
+    <section class="contact text-bg-dark bg-gradient py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 offset-md-2">
+            <div class="text-center mb-5">
+              <h4 class="text-uppercase fw-bold text-primary">Contact</h4>
+              <hr class="w-25 mx-auto" />
+              <h2 class="mb-4">I'd love to hear from you.</h2>
+              <p class="lead">
+                If you have any questions or would like to work together, please
+                contact me with the form below.
+              </p>
+            </div>
+
+            <!-- Form ATENÇÃO: Falta cadastrar no Netlify-->
+            <form name="contact" netlify>
+              <div class="mb-5">
+                <input
+                  type="text"
+                  class="form-control bg-transparent border-top-0 border-start-0 border-end-0 rounded-0 border-muted text-white"
+                  name="name"
+                  placeholder="Name"
+                />
+              </div>
+              <div class="mb-5">
+                <input
+                  type="email"
+                  class="form-control bg-transparent border-top-0 border-start-0 border-end-0 rounded-0 border-muted text-white"
+                  name="email"
+                  placeholder="Email"
+                />
+              </div>
+              <div class="mb-5">
+                <textarea
+                  class="form-control bg-transparent border-top-0 border-start-0 border-end-0 rounded-0 border-muted text-white"
+                  name="message"
+                  placeholder="Message"
+                ></textarea>
+              </div>
+              <div class="mb-5 d-grid">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div><!--row-->
+
+        <!-- Footer -->
+        <div class="d-flex mt-5">
+          <p class="flex-grow-1">
+            Copyright &copy; 2024 | Design By StyleShout
+          </p>
+          <div class="hstack gap-3">
+            <a href="#">
+              <i class="fab fa-facebook fa-2x text-white"></i>
+            </a>
+            <a class="text-decoration-none" href="#">
+              <i class="fab fa-twitter fa-2x text-white"></i>
+            </a>
+            <a class="text-decoration-none" href="#">
+              <i class="fab fa-instagram fa-2x text-white"></i>
+            </a>
+            <a class="text-decoration-none" href="#">
+              <i class="fab fa-linkedin fa-2x text-white"></i>
+            </a>
+            <a class="text-decoration-none" href="#">
+              <i class="fab fa-dribbble fa-2x text-white"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/lightbox-plus-jquery.min.js"></script> <!--LIGHTBOX-->
+    <script src="js/script.js"></script>
+  </body>
+</html>
