@@ -1,0 +1,11 @@
+@media(min-width: 800px) {
+    .container {
+        width: 800px;
+    }
+}
+
+.breadcrumb {
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+}

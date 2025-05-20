@@ -1,0 +1,128 @@
+<!--
+* Font: cdnjs.com
+* when you do margin and padding, you can have just a row and then puta a passing in the inner div
+or you can put a padding in the samer outter dic off the row class
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <!--Font-->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"
+      integrity="sha512-ykZ1QQr0Jy/4ZkvKuqWn4iF3lqPZyij9iRv6sGqLRdTPkY69YX6+7wvVGmsdBbiIfN/8OdsI7HABjvEok6ZopQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!--Icons from fontawesome: necessary to put the star and the magnifying glass-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="css/style.css"
+    />
+    <title>Ratng Components</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card bg-light border-0 shadow-lg rounded-4 mt-5">
+        <div class="card-body">
+          <div class="row .p-5">
+            <div class="col-7">
+              <h2 class="fw-bold">What do others think about the classes?</h2>
+            </div>
+            <!--div col-7-->
+            <div class="col-5">
+              <div class="card card-body">
+                <h3 class="display-5 fw-semibold">
+                  <i class="fas fa-star text-warning"></i> 4.6 <!--icon from fontawesome-->      
+                </h3>
+                <p class="text-center">Avarage Rating</p>
+              </div><!--inner div card / card-body"-->
+            </div><!--div col-5 . h2´s div already got 7-->
+          </div><!--row div-->
+          
+          <!--Search bar-->
+          <div class="row px-5 mt-5">
+            <div class="col-12">
+              <div class="input-group imput-group-lg">
+                <span class="input-group-text rounded-start-5">
+                  <i class="fas fa-search"></i>
+                </span>
+                <input type="text" class="form-control rounded-end-5" placeholder="Search for views"> <!--text bar-->
+              </div>
+            </div>
+          </div>
+          <!--ratings-->
+          <div class="row p-5">
+            <div class="col-12 vstack gap-2"><!--gap-2 will put margim between the scores-->
+              <h5>Review</h5>
+              <div class="d-flex align-items-center gap-1">
+                <span>5</span> <i class="fas fa-star text-warning"></i>
+                <div class="progress ms-3" style="height: 10px; width: 100%">
+                  <div class="progress-bar bg-warning" style="width:80%" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div><!--this is the fill-->
+                </div>
+              </div>
+
+              <div class="d-flex align-items-center gap-1">
+                <span>4</span> <i class="fas fa-star text-warning"></i>
+                <div class="progress ms-3" style="height: 10px; width: 100%">
+                  <div class="progress-bar bg-warning" style="width:60%" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div><!--this is the fill-->
+                </div>
+              </div>
+
+              <div class="d-flex align-items-center gap-1">
+                <span>3</span> <i class="fas fa-star text-warning"></i>
+                <div class="progress ms-3" style="height: 10px; width: 100%">
+                  <div class="progress-bar bg-warning" style="width:10%" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div><!--this is the fill-->
+                </div>
+              </div>
+
+              <div class="d-flex align-items-center gap-1">
+                <span>2</span> <i class="fas fa-star text-warning"></i>
+                <div class="progress ms-3" style="height: 10px; width: 100%">
+                  <div class="progress-bar bg-warning" style="width:15%" role="progressbar" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div><!--this is the fill-->
+                </div>
+              </div>
+
+              <div class="d-flex align-items-center gap-1">
+                <span>1</span> <i class="fas fa-star text-warning"></i>
+                <div class="progress ms-3" style="height: 10px; width: 100%">
+                  <div class="progress-bar bg-warning" style="width:5%" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100"></div><!--this is the fill-->
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!--Button-->
+          <div class="row px-5 pb-4">
+            <div class="col-12">
+              <a href="#" class="btn btn-success btn-lg-rounded-5">Write Review</a>
+            </div>
+          </div>          
+        </div>
+        <!--div card-->
+      </div>
+      <!--div card-->
+    </div>
+    <!--div container-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
