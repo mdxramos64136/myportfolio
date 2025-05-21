@@ -137,14 +137,14 @@ I will grab it on JS to make a typing effect.
       <div class="container">
         <div class="row">
           <div class="col-md-6">
-            <h3 class="text-uppercase fw-bold  text-center">Profile</h3>
+            <h3 class="text-uppercase fw-bold  text-center profile-h3">Profile</h3>
             <p>
               Here is some more info about myself to help you get to know me
               better.
             </p>
             <ul class="list-group list-group-flush">
               <!--list-group-flush will take away the outside border-->
-              <li class="list-group-item mb-3">
+              <li class="list-group-item  mb-3 profile-list-hover">
                 <h5 class="text-transform">
                   <i class="fas fa-user text-primary"></i>
                   Full Name:
@@ -157,21 +157,21 @@ I will grab it on JS to make a typing effect.
                 </h5>
                 <p>August 10, 1981</p>
               </li> -->
-              <li class="list-group-item mb-3">
+              <li class="list-group-item mb-3 profile-list-hover">
                 <h5 class="text-transform">
-                  <i class="fas fa-building text-primary"></i>
+                  <i class="fas fa-building text-primary "></i>
                   Current Position:
                 </h5>
                 <p>Seeking for the first oportunity</p>
               </li>
-              <li class="list-group-item mb-3">
+              <li class="list-group-item mb-3 profile-list-hover">
                 <h5 class="text-transform">
                   <i class="fas fa-home text-primary"></i>
                   Github Repository:
                 </h5>
                 <a href="https://github.com/mdxramos64136">Click here!</a>
               </li>
-              <li class="list-group-item mb-3">
+              <li class="list-group-item mb-3 profile-list-hover">
                 <h5 class="text-transform">
                   <i class="fas fa-envelope text-primary"></i>
                   Email:
@@ -180,8 +180,10 @@ I will grab it on JS to make a typing effect.
               </li>
             </ul>
           </div>
+
+          <!--Skills - right side-->
           <div class="col-md-6  text-center">
-            <h3 class="text-uppercase fw-bold">Skills</h3>
+            <h3 class="text-uppercase fw-bold profile-h3">Skills</h3>
             <p>
               Here is a list of my skills: 
             </p>
@@ -223,11 +225,11 @@ I will grab it on JS to make a typing effect.
             <img class="icons-size" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" />
           
 
-        <!--Buttons-->
+        <!--Button-->
         <div class="row mt-5 text-center">
           <div class="col-12">
             
-            <a href="files/marcel_resume.pdf" download class="btn btn-dark btn-lg text-uppercase px-5 mx-3 my-2">
+            <a href="files/marcel_resume.pdf" download class="btn btn-lg text-uppercase px-5 mx-3 my-2 w-100 btn-download">
               Download my Resume
             </a>
           </div>
@@ -383,7 +385,7 @@ I will grab it on JS to make a typing effect.
 
 
  <!-- Contact -->
-    <section class="contact text-bg-dark bg-gradient py-5">
+    <section class="contact  py-5">
       <div class="container">
         <div class="row">
           <div class="col-md-8 offset-md-2">
@@ -397,12 +399,12 @@ I will grab it on JS to make a typing effect.
               </p>
             </div>
 
-            <!-- Form ATENÇÃO: Falta cadastrar no Netlify-->
+            
             <form name="contact" netlify>
               <div class="mb-5">
                 <input
                   type="text"
-                  class="form-control bg-transparent border-top-0 border-start-0 border-end-0 rounded-0 border-muted text-white"
+                  class="form-control bg-transparent border-top-0 border-start-0 border-end-0 rounded-0 border-muted text-primary"
                   name="name"
                   placeholder="Name"
                 />
@@ -410,20 +412,21 @@ I will grab it on JS to make a typing effect.
               <div class="mb-5">
                 <input
                   type="email"
-                  class="form-control bg-transparent border-top-0 border-start-0 border-end-0 rounded-0 border-muted text-white"
+                  class="form-control bg-transparent border-top-0 border-start-0 border-end-0 rounded-0 border-muted text-primary"
                   name="email"
                   placeholder="Email"
                 />
               </div>
               <div class="mb-5">
                 <textarea
-                  class="form-control bg-transparent border-top-0 border-start-0 border-end-0 rounded-0 border-muted text-white"
+                  class="form-control bg-transparent border-top-0 border-start-0 border-end-0 rounded-0 border-muted text-primary"
                   name="message"
                   placeholder="Message"
+                  rows="6"
                 ></textarea>
               </div>
-              <div class="mb-5 d-grid">
-                <button type="submit" class="btn btn-primary">Submit</button>
+              <div class="mb-5 d-flex justify-content-end">
+                <button type="submit" class=" btn-submit">Submit</button>
               </div>
             </form>
           </div>

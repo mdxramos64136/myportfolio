@@ -1,6 +1,9 @@
+/* hr {
+  color: #7bb0ff;
+} */
 .header {
   position: relative; /* Essential for the overlay positioning */
-  background: #151515 url("../images/intro-bg.jpg") no-repeat center center;
+  background: #151515 url("../images/computer.jpg") no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -13,9 +16,9 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.4); /* Less opacity for brighter content */
+  background: rgba(0, 0, 0, 0.7);
   z-index: 1;
-  pointer-events: none; /* So overlay does not block interactions */
+  pointer-events: none;
 }
 
 /* Main content above overlay */
@@ -51,11 +54,10 @@
 }
 
 .services {
-  position: relative; /* Needed for overlay positioning */
-  background: url("../images/bg.jpg") no-repeat center center;
+  position: relative;
+  background: url("../images/sunset.jpg") no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
-  /* Do NOT use text-bg-dark here, it can mess with colors */
 }
 
 .services::after {
@@ -65,12 +67,11 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.7); /* Strong overlay for image */
+  background: rgba(0, 0, 0, 0.7);
   z-index: 1;
   pointer-events: none;
 }
 
-/* This puts all content above the overlay! */
 .services > .row,
 .services .container,
 .service-card,
@@ -82,11 +83,10 @@
   position: relative !important;
   z-index: 2 !important;
   color: inherit;
-  /* If needed, force the vivid color: */
 }
 
 .text-primary {
-  color: #e6007a !important; /* Vivid pink */
+  color: #7bb0ff !important;
 }
 
 .text-white {
@@ -98,7 +98,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  text-align: center; /* Center text for h3, p, etc. */
+  text-align: center; /* for h3, p, etc. */
 }
 
 .service-card p {
@@ -113,10 +113,85 @@
   color: #fff !important;
 }
 
-/* hr lines use background-color, not color: */
+/* hr lines use background-color */
 .service-card hr {
-  border-top: 2px solid #e6007a !important; /* Pink line */
+  border-top: 2px solid #7bb0ff !important;
   opacity: 1 !important;
+}
+
+.profile-h3 {
+  color: #7bb0ff;
+}
+
+.profile-list-hover {
+  background-color: #eef3fc;
+  transition: background 0.3s, box-shadow 0.3s, color 0.3s;
+}
+
+.profile-list-hover:hover {
+  border-color: #297bf6;
+  box-shadow: 0 4px 16px rgba(123, 176, 255, 0.35),
+    0 1.5px 6px rgba(0, 0, 0, 0.07);
+  border-radius: 12px;
+  color: #297bf6;
+}
+
+.btn-download {
+  background-color: #cedff9 !important;
+
+  border-radius: 10px !important;
+  border-color: #297bf6;
+  font-size: 18px !important;
+  font-weight: 600 !important;
+  color: #297bf6 !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  vertical-align: middle !important;
+  width: 100% !important;
+  height: 52.1094px !important;
+  transition: background 0.3s, box-shadow 0.3s, color 0.3s !important;
+  display: inline-block !important;
+  cursor: pointer;
+  padding: 0.5rem 1rem !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.btn-download:hover,
+.btn-download:focus {
+  border: 1.5px solid #297bf6 !important;
+  border-color: #297bf6 !important;
+  box-shadow: 0 4px 16px rgba(123, 176, 255, 0.95),
+    0 1.5px 6px rgba(17, 128, 232, 0.05) !important;
+  border-radius: 12px !important;
+  color: #fff !important;
+  background-color: #7ab3f3 !important;
+  text-decoration: none !important;
+}
+
+.btn-submit {
+  background-color: #cedff9;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #297bf6;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  width: 1000px;
+  height: 52.1094px;
+  transition: background 0.3s, box-shadow 0.3s, color 0.3s;
+}
+
+.btn-submit:hover {
+  border: 1.5px solid #297bf6;
+  border-color: #297bf6;
+  box-shadow: 0 4px 16px rgba(123, 176, 255, 0.35),
+    0 1.5px 6px rgba(0, 0, 0, 0.07);
+  border-radius: 12px;
+  color: #297bf6;
 }
 
 @media (max-width: 767px) {
