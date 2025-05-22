@@ -133,15 +133,13 @@
 
 .profile-list-hover:hover {
   border-color: #297bf6;
-  box-shadow: 0 4px 16px rgba(123, 176, 255, 0.35),
-    0 1.5px 6px rgba(0, 0, 0, 0.07);
+  box-shadow: 0 4px 16px rgba(123, 176, 255, 0.35), 0 1.5px 6px rgba(0, 0, 0, 0.07);
   border-radius: 12px;
   color: #297bf6;
 }
 
 .btn-download {
   background-color: #cedff9 !important;
-
   border-radius: 10px !important;
   border-color: #297bf6;
   font-size: 18px !important;
@@ -165,8 +163,7 @@
 .btn-download:focus {
   border: 1.5px solid #297bf6 !important;
   border-color: #297bf6 !important;
-  box-shadow: 0 4px 16px rgba(123, 176, 255, 0.95),
-    0 1.5px 6px rgba(17, 128, 232, 0.05) !important;
+  box-shadow: 0 4px 16px rgba(123, 176, 255, 0.95), 0 1.5px 6px rgba(17, 128, 232, 0.05) !important;
   border-radius: 12px !important;
   color: #fff !important;
   background-color: #7ab3f3 !important;
@@ -191,8 +188,7 @@
 .btn-submit:hover {
   border: 1.5px solid #297bf6;
   border-color: #297bf6;
-  box-shadow: 0 4px 16px rgba(123, 176, 255, 0.35),
-    0 1.5px 6px rgba(0, 0, 0, 0.07);
+  box-shadow: 0 4px 16px rgba(123, 176, 255, 0.35), 0 1.5px 6px rgba(0, 0, 0, 0.07);
   border-radius: 12px;
   color: #297bf6;
 }
@@ -214,3 +210,5 @@
     padding-bottom: 20px;
   }
 }
+
+/*# sourceMappingURL=styles.css.map */
