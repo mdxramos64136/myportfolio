@@ -6995,10 +6995,10 @@ fieldset:disabled .btn {
   background-color: RGBA(204, 0, 95, var(--bs-bg-opacity, 1)) !important;
 }
 
-.text-bg-secondary {
+/* .text-bg-secondary {
   color: #7bb0ff !important;
   background-color: #334158 !important;
-}
+} */
 
 .text-bg-success {
   color: #fff !important;

@@ -1,9 +1,9 @@
 // Font
-$font-family-sans-serif: 'Poppins', sans-serif;
+$font-family-sans-serif: "Poppins", sans-serif;
 
 // Color
 $primary: #cc005f;
-$secondary: #990047;
+$secondary: #7bb0ff;
 $dark: #000;
 $light: #f4f4f4;
 
@@ -47,5 +47,4 @@ $container-max-widths: (
   xxl: 1000px,
 ) !default;
 
-
-@import '../node_modules/bootstrap/scss/bootstrap';
+@import "../node_modules/bootstrap/scss/bootstrap";
