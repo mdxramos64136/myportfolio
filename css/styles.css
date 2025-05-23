@@ -34,10 +34,10 @@
 }
 
 .header .social {
-  bottom: 50px;
-  left: 50%;
-  transform: translateX(-50%);
-  position: absolute;
+  bottom: 50px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  position: absolute !important;
 }
 
 .about-img {
