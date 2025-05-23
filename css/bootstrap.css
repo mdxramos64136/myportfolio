@@ -6991,7 +6991,7 @@ fieldset:disabled .btn {
 }
 
 .text-bg-primary {
-  color: #fff !important;
+  color: #fff;
   background-color: RGBA(204, 0, 95, var(--bs-bg-opacity, 1)) !important;
 }
 
