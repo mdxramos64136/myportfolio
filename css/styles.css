@@ -6,6 +6,7 @@
   background: #151515 url("../images/computer.jpg") no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
+  min-height: 100vh;
 }
 
 /* Overlay for the header */
@@ -91,6 +92,17 @@
 .text-bg-secondary {
   background-color: #334158 !important;
   color: #7bb0ff !important;
+}
+
+.text-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  position: relative;
+  z-index: 2;
 }
 
 .text-primary {
