@@ -34,10 +34,12 @@
 }
 
 .header .social {
-  bottom: 50px !important;
-  left: 50% !important;
-  transform: translateX(-50%) !important;
-  position: absolute !important;
+  /*bottom: 50px;*/
+  bottom: 40px;
+  z-index: 2;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
 }
 
 .about-img {
@@ -138,8 +140,7 @@
 
 .profile-list-hover:hover {
   border-color: #297bf6;
-  box-shadow: 0 4px 16px rgba(123, 176, 255, 0.35),
-    0 1.5px 6px rgba(0, 0, 0, 0.07);
+  box-shadow: 0 4px 16px rgba(123, 176, 255, 0.35), 0 1.5px 6px rgba(0, 0, 0, 0.07);
   border-radius: 12px;
   color: #297bf6;
 }
@@ -169,8 +170,7 @@
 .btn-download:focus {
   border: 1.5px solid #297bf6 !important;
   border-color: #297bf6 !important;
-  box-shadow: 0 4px 16px rgba(123, 176, 255, 0.95),
-    0 1.5px 6px rgba(17, 128, 232, 0.05) !important;
+  box-shadow: 0 4px 16px rgba(123, 176, 255, 0.95), 0 1.5px 6px rgba(17, 128, 232, 0.05) !important;
   border-radius: 12px !important;
   color: #fff !important;
   background-color: #7ab3f3 !important;
@@ -195,13 +195,16 @@
 .btn-submit:hover {
   border: 1.5px solid #297bf6;
   border-color: #297bf6;
-  box-shadow: 0 4px 16px rgba(123, 176, 255, 0.35),
-    0 1.5px 6px rgba(0, 0, 0, 0.07);
+  box-shadow: 0 4px 16px rgba(123, 176, 255, 0.35), 0 1.5px 6px rgba(0, 0, 0, 0.07);
   border-radius: 12px;
   color: #297bf6;
 }
 
 @media (max-width: 767px) {
+  .header .social {
+    bottom: 20px; /* mais perto do fundo em telas pequenas */
+    font-size: 1.8rem;
+  }
   .header .social i {
     font-size: 30px;
   }

@@ -34,7 +34,9 @@
 }
 
 .header .social {
-  bottom: 50px;
+  /*bottom: 50px;*/
+  bottom: 40px;
+  z-index: 2;
   left: 50%;
   transform: translateX(-50%);
   position: absolute;
@@ -86,6 +88,11 @@
   position: relative !important;
   z-index: 2 !important;
   color: inherit;
+}
+
+.text-bg-secondary {
+  background-color: #334158 !important;
+  color: #7bb0ff !important;
 }
 
 .text-primary {
@@ -141,7 +148,6 @@
 
 .btn-download {
   background-color: #cedff9 !important;
-
   border-radius: 10px !important;
   border-color: #297bf6;
   font-size: 18px !important;
@@ -198,6 +204,10 @@
 }
 
 @media (max-width: 767px) {
+  .header .social {
+    bottom: 20px; /* mais perto do fundo em telas pequenas */
+    font-size: 1.8rem;
+  }
   .header .social i {
     font-size: 30px;
   }
@@ -212,5 +222,6 @@
     margin-bottom: 40px;
     border-bottom: var(--bs-dark) solid 1px;
     padding-bottom: 20px;
+    color: #7bb0ff !important;
   }
 }
