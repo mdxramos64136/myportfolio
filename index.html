@@ -238,121 +238,122 @@ I will grab it on JS to make a typing effect.
       </div>
     </section><!--Profile and skills-->
     
-    <!--Portfolio-->
+ <!-- Portfolio  -->
     <section class="portfolio py-5 bg-light">
       <div class="container">
         <div class="text-center mb-5">
-          <h4 class="text-uppercase fw-bold text-primary">
-            Portfolio
-          </h4>
-          <hr class="w-25 mx-auto"/> <!--It´s just a line-->
+          <h4 class="text-uppercase fw-bold text-primary">Portfolio</h4>
+          <hr class="w-25 mx-auto" /> <!--It´s just a line-->
           <h2 class="mb-4">Check Out My Work</h2>
           <p class="lead">Here is a small sample of my projects</p>
-        </div><!--text-center mb-5-->
+        </div>
         <div class="row">
-          <div class="col-md-6 mb-4"><!--2 projects/row , (6 columns each one)-->
+          <div class="col-md-6 mb-4">
             <div class="project shadow-lg rounded-5">
-              <!--Img will have a link around them because it needs to open a lightbox (add data-lightbox prop.)
-              - data-title="Clickboard Landing Page" is the name of the page
-              - data-lightbox="images" will put the projects in the same group (images) and add 
-              arrow <> to navigate among them. If you had put a different name it would have the arrows-->
+              <a href="https://ratemoviewebapp.netlify.app" target="_blank" rel="noopener noreferrer">
+                <img src="./images/moviewebapp.jpg" alt="" class="img-fluid rounded-3" />
+              </a>
+              <div class="card mt-3">
+                <div class="card-body p-3">
+                  <h5 class="card-title mb-2">Movie Web App</h5>
+                  <p class="card-text small">
+                    Taking advantege of the OMDP API, this project was built with React and allows users to search for and rate movies.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-4">
+            <div class="project shadow-lg rounded-5">
               <a href="./images/project1d.jpg" data-lightbox="images" data-title="TubeClass">
-                <img src="./images/project1.jpg" alt="" class="img-fluid rounded-3 img-size"><!--Image will also be shown on the page once it gets clicked-->
+                <img src="./images/project1.jpg" alt="" class="img-fluid rounded-3 img-size" />
               </a>
             </div>
-          </div><!--col-md-6-->
-          
-          <div class="col-md-6 mb-4"><!--2 projects/row , (6 columns each one)-->
-            <div class="project shadow-lg rounded-5">
-              <a href="./images/project2.jpg" data-lightbox="images" data-title="Loop Studios Web Site">
-                <img src="./images/project2.jpg" alt="" class="img-fluid rounded-3"><!--Image will also be shown on the page once it gets clicked-->
-              </a>
-            </div>
-          </div><!--col-md-6-->
+          </div>
 
           <div class="col-md-6 mb-4">
             <div class="project shadow-lg rounded-5">
               <a href="./images/project3.jpg" data-lightbox="images" data-title="Shortly Website">
-                <img src="./images/project3.jpg" alt="" class="img-fluid rounded-3"><!--Image will also be shown on the page once it gets clicked-->
+                <img src="./images/project3.jpg" alt="" class="img-fluid rounded-3" />
               </a>
             </div>
-          </div><!--col-md-6-->
+          </div>
 
           <div class="col-md-6 mb-4">
             <div class="project shadow-lg rounded-5">
               <a href="./images/project4.jpg" data-lightbox="images" data-title="Flyo Website">
-                <img src="./images/project4.jpg" alt="" class="img-fluid rounded-3"><!--Image will also be shown on the page once it gets clicked-->
+                <img src="./images/project4.jpg" alt="" class="img-fluid rounded-3" />
               </a>
             </div>
-          </div><!--col-md-6-->
+          </div>
 
           <div class="col-md-6 mb-4">
             <div class="project shadow-lg rounded-5">
               <a href="./images/project5.jpg" data-lightbox="images" data-title="Bookmark Website">
-                <img src="./images/project5.jpg" alt="" class="img-fluid rounded-3"><!--Image will also be shown on the page once it gets clicked-->
+                <img src="./images/project5.jpg" alt="" class="img-fluid rounded-3" />
               </a>
             </div>
-          </div><!--col-md-6-->
+          </div>
 
           <div class="col-md-6 mb-4">
             <div class="project shadow-lg rounded-5">
-              <a href="./images/project6.jpg" data-lightbox="images" data-title="Grid Layaout">
-                <img src="./images/project6.jpg" alt="" class="img-fluid rounded-3"><!--Image will also be shown on the page once it gets clicked-->
+              <a href="./images/project6.jpg" data-lightbox="images" data-title="Grid Layout">
+                <img src="./images/project6.jpg" alt="" class="img-fluid rounded-3" />
               </a>
             </div>
-          </div><!--col-md-6-->
+          </div>
         </div><!--row-->
-      </div><!--Container-->
+      </div><!--container-->
     </section>
 
-
-
-    <!-- Services-->
+    <!-- Services (Corrigido: container incluído ao redor da row) -->
     <section class="services text-bg-dark py-5 position-relative">
-<div class="row">
-  <!-- Responsive Layouts -->
-  <div class="col-12 col-md-6 col-lg-4 mb-4 d-flex">
-    <div class="service-card w-100">
-      <i class="fas fa-window-maximize fa-3x text-primary mb-3"></i>
-      <h3 class="fs-3">Responsive Layouts</h3>
-      <hr class="w-25 mx-auto" />
-      <p class="fs-5">
-        I am able to create responsive, accessible, and modern layouts using HTML, CSS,
-        Bootstrap and JavaScript — ensuring that your website looks great on
-        all screen sizes and devices.
-      </p>
-    </div>
-  </div>
+      <div class="container">
+        <div class="row">
+          <!-- Responsive Layouts -->
+          <div class="col-12 col-md-6 col-lg-4 mb-4 d-flex">
+            <div class="service-card w-100">
+              <i class="fas fa-window-maximize fa-3x text-primary mb-3"></i>
+              <h3 class="fs-3">Responsive Layouts</h3>
+              <hr class="w-25 mx-auto" />
+              <p class="fs-5">
+                I am able to create responsive, accessible, and modern layouts using HTML, CSS,
+                Bootstrap and JavaScript — ensuring that your website looks great on
+                all screen sizes and devices.
+              </p>
+            </div>
+          </div>
 
-  <!-- Front-End Web Development -->
-  <div class="col-12 col-md-6 col-lg-4 mb-4 d-flex">
-    <div class="service-card w-100">
-      <i class="fas fa-code fa-3x text-primary mb-3"></i>
-      <h3 class="fs-3">Front-End Web Development</h3>
-      <hr class="w-25 mx-auto" />
-      <p class="fs-5">
-        I develop responsive and interactive user interfaces using HTML, CSS, 
-        JavaScript, Bootstrap and React. My focus is on clean code, 
-        component-based architecture, and creating seamless user experiences.
-      </p>
-    </div>
-  </div>
+          <!-- Front-End Web Development -->
+          <div class="col-12 col-md-6 col-lg-4 mb-4 d-flex">
+            <div class="service-card w-100">
+              <i class="fas fa-code fa-3x text-primary mb-3"></i>
+              <h3 class="fs-3">Front-End Web Development</h3>
+              <hr class="w-25 mx-auto" />
+              <p class="fs-5">
+                I develop responsive and interactive user interfaces using HTML, CSS, 
+                JavaScript, Bootstrap and React. My focus is on clean code, 
+                component-based architecture, and creating seamless user experiences.
+              </p>
+            </div>
+          </div>
 
-  <!-- Version Control -->
-  <div class="col-12 col-md-6 col-lg-4 mb-4 d-flex">
-    <div class="service-card w-100">
-      <i class="fab fa-github fa-3x text-primary mb-3"></i>
-      <h3 class="fs-3">Version Control</h3>
-      <hr class="w-25 mx-auto" />
-      <p class="fs-5">
-        I can use Git and GitHub to track code changes, collaborate efficiently, 
-        and manage project history. My workflow includes creating branches, 
-        writing meaningful commit messages, and pushing updates to remote repositories.
-      </p>
-    </div>
-  </div>
-</div>
-
+          <!-- Version Control -->
+          <div class="col-12 col-md-6 col-lg-4 mb-4 d-flex">
+            <div class="service-card w-100">
+              <i class="fab fa-github fa-3x text-primary mb-3"></i>
+              <h3 class="fs-3">Version Control</h3>
+              <hr class="w-25 mx-auto" />
+              <p class="fs-5">
+                I can use Git and GitHub to track code changes, collaborate efficiently, 
+                and manage project history. My workflow includes creating branches, 
+                writing meaningful commit messages, and pushing updates to remote repositories.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
 <!-- Stats -->
@@ -434,19 +435,19 @@ I will grab it on JS to make a typing effect.
         </div><!--row-->
 
         <!-- Footer -->
-        <div class="d-flex mt-5">
-          <p class="flex-grow-1">
-            Copyright &copy; 2024 | Design By Marcel Ramos
-          </p>
-          <div class="hstack gap-3">
+          <div class="hstack gap-3 justify-content-center w-100">
             <a class="text-decoration-none" href="https://www.linkedin.com/in/marcel-ramos-514a8a319">
-              <i class="fab fa-linkedin fa-2x text-white"></i>
+              <i class="fa-brands fa-linkedin fa-3x" style="color: #74C0FC;"></i>
             </a>
 
             <a href="https://github.com/mdxramos64136">
-              <i class="fab fa-github fa-3x text-white"></i>
+              <i class="fa-brands fa-github fa-3x" style="color: #74C0FC;"></i>
             </a>
           </div>
+        <div class="text-center w-10 mt-4">
+          <p class="flex-grow-1">
+            Copyright &copy; 2024 | Design By Marcel Ramos
+          </p>
         </div>
       </div>
     </section>
