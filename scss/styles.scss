@@ -208,6 +208,35 @@
   color: transparent;
   user-select: none;
 }
+
+.portfolio-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.portifolio-desc {
+  // background-color: #bfdcfd;
+  margin-top: 0;
+  width: 100%;
+  height: 70px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.project {
+  border-radius: 0.7rem !important;
+  overflow: hidden;
+}
+
+.card {
+  border-radius: 0 !important;
+  border: none !important;
+  background-color: #d5dff9;
+}
+
 @media (max-width: 767px) {
   .header .social {
     bottom: 20px; /* mais perto do fundo em telas pequenas */
