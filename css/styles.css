@@ -200,6 +200,12 @@
   color: #297bf6;
 }
 
+/*hides the h1 default content while the typing effect doesn't occur.*/
+.typing-hidden {
+  color: transparent;
+  user-select: none;
+}
+
 @media (max-width: 767px) {
   .header .social {
     bottom: 20px; /* mais perto do fundo em telas pequenas */
