@@ -1,11 +1,3 @@
-<!--
-* content will comes up over the image. It won´t scroll'
-* <h1 class="(...)" id="typing-text"> I put an id on h1 besause
-I will grab it on JS to make a typing effect. 
-* background-attachment: fixed;
-* Font Awesome - check all icons available at https://fontawesome.com/
-* There are also other alternatives, such as https://devicon.dev/:
--->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -62,6 +54,8 @@ I will grab it on JS to make a typing effect.
 
     <title>Marcel Ramos | Web Developer</title>
   </head>
+
+  <!--BODY-->
   <body>
     <header class="header vh-100 text-center position-relative">
       <div
@@ -91,11 +85,13 @@ I will grab it on JS to make a typing effect.
         </a>
 
         <div class="social d-flex gap-3 position-absolute">
-          <a href="https://www.linkedin.com/in/marcel-ramos-514a8a319">
+          <a
+            href="https://www.linkedin.com/in/marcel-ramos-514a8a319"
+            aria-label="Linkedin">
             <i class="fab fa-linkedin fa-3x text-white"></i>
           </a>
 
-          <a href="https://github.com/mdxramos64136">
+          <a href="https://github.com/mdxramos64136" aria-label="GitHub">
             <i class="fab fa-github fa-3x text-white"></i>
           </a>
         </div>
@@ -275,7 +271,7 @@ I will grab it on JS to make a typing effect.
                 rel="noopener noreferrer">
                 <img
                   src="./images/moviewebapp.jpg"
-                  alt="movie app image"
+                  alt="Movie app image with a list of movies."
                   class="img-fluid portfolio-img" />
               </a>
               <div class="card mt-0">
@@ -299,7 +295,7 @@ I will grab it on JS to make a typing effect.
                 <img
                   class="portfolio-img"
                   src="./images/eat-split.jpg"
-                  alt="eat and split app image"
+                  alt="Eat and split app image with a list of friends."
                   class="img-fluid rounded-3" />
               </a>
               <div class="card mt-0">
@@ -324,7 +320,7 @@ I will grab it on JS to make a typing effect.
                 <img
                   class="portfolio-img"
                   src="./images/project1.jpg"
-                  alt=""
+                  alt="Mentorship course promo image showing a young man recording videos."
                   class="img-fluid rounded-3 img-size" />
               </a>
             </div>
@@ -339,7 +335,7 @@ I will grab it on JS to make a typing effect.
                 <img
                   class="portfolio-img"
                   src="./images/project3.jpg"
-                  alt=""
+                  alt="Person working at a modern desk with a computer."
                   class="img-fluid rounded-3" />
               </a>
             </div>
@@ -353,7 +349,7 @@ I will grab it on JS to make a typing effect.
                 data-title="Flyo Website">
                 <img
                   src="./images/project4.jpg"
-                  alt=""
+                  alt="Illustration of people storing files in a secure online folder."
                   class="img-fluid rounded-3" />
               </a>
             </div>
@@ -367,7 +363,7 @@ I will grab it on JS to make a typing effect.
                 data-title="Bookmark Website">
                 <img
                   src="./images/project5.jpg"
-                  alt=""
+                  alt="Illustration of a bookmark manager interface with organized website links."
                   class="img-fluid rounded-3" />
               </a>
             </div>
@@ -479,6 +475,7 @@ I will grab it on JS to make a typing effect.
 
             <form name="contact" netlify>
               <div class="mb-5">
+                <label for="contact-name" class="visually-hidden">Name</label>
                 <input
                   type="text"
                   class="form-control bg-transparent border-top-0 border-start-0 border-end-0 rounded-0 border-muted text-primary"
@@ -486,6 +483,7 @@ I will grab it on JS to make a typing effect.
                   placeholder="Name" />
               </div>
               <div class="mb-5">
+                <label for="contact-email" class="visually-hidden">Email</label>
                 <input
                   type="email"
                   class="form-control bg-transparent border-top-0 border-start-0 border-end-0 rounded-0 border-muted text-primary"
@@ -493,6 +491,9 @@ I will grab it on JS to make a typing effect.
                   placeholder="Email" />
               </div>
               <div class="mb-5">
+                <label for="contact-message" class="visually-hidden">
+                  Message
+                </label>
                 <textarea
                   class="form-control bg-transparent border-top-0 border-start-0 border-end-0 rounded-0 border-muted text-primary"
                   name="message"
@@ -511,11 +512,12 @@ I will grab it on JS to make a typing effect.
         <div class="hstack gap-3 justify-content-center w-100">
           <a
             class="text-decoration-none"
-            href="https://www.linkedin.com/in/marcel-ramos-514a8a319">
+            href="https://www.linkedin.com/in/marcel-ramos-514a8a319"
+            aria-label="Linkedin">
             <i class="fa-brands fa-linkedin fa-3x" style="color: #74c0fc"></i>
           </a>
 
-          <a href="https://github.com/mdxramos64136">
+          <a href="https://github.com/mdxramos64136" aria-label="GitHub">
             <i class="fa-brands fa-github fa-3x" style="color: #74c0fc"></i>
           </a>
         </div>
