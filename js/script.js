@@ -26,3 +26,26 @@ function typeText(text, typingElement, delay) {
 
 //run the function typing effect when the DOM get loaded:
 document.addEventListener("DOMContentLoaded", typpingEffect);
+
+/****************************************************************/
+//CUSTOM MODAL:
+document.addEventListener("DOMContentLoaded", function () {
+  // Seleciona SÓ as imagens que têm data-bs-toggle="modal"
+  document
+    .querySelectorAll('.portfolio-img[data-bs-toggle="modal"]')
+    .forEach(function (img) {
+      img.addEventListener("click", function () {
+        // Coleta os dados dos atributos data-*
+        const imgSrc = img.src;
+        const title = img.dataset.title || "";
+        const desc = img.dataset.desc || "";
+        const link = img.dataset.link || "#";
+
+        // Popula o modal Bootstrap
+        document.getElementById("modalImg").src = imgSrc;
+        document.getElementById("modalTitle").textContent = title;
+        document.getElementById("modalDesc").textContent = desc;
+        document.getElementById("modalLink").href = link;
+      });
+    });
+});

@@ -257,12 +257,42 @@
       <div class="container">
         <div class="text-center mb-5">
           <h4 class="text-uppercase fw-bold text-primary">Portfolio</h4>
-          <hr class="w-25 mx-auto" />
           <!--It´s just a line-->
+          <hr class="w-25 mx-auto" />
           <h2 class="mb-4">Check Out My Work</h2>
-          <p class="lead">Here is a small sample of my projects</p>
+          <p class="lead">
+            Here is a small sample of my projects. Click any image below to
+            explore them.
+          </p>
         </div>
         <div class="row">
+          <div class="col-md-6 mb-4">
+            <div class="project shadow-lg rounded-5">
+              <a
+                href="https://react-quiz-mr.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer">
+                <img
+                  src="./images/MyReactApp.jpg"
+                  alt="Welcome screen of the React app image with"
+                  class="img-fluid portfolio-img" />
+              </a>
+              <div class="card mt-0">
+                <div class="card-body p-3">
+                  <h5 class="card-title mb-2">React Quiz</h5>
+                  <p class="card-text fs-6 portifolio-desc overflow-auto">
+                    React quiz app with 100 questions. Originally a capstone
+                    project from Jonas Schmedtmann's React course, I extended it
+                    by adding features like question count selection, elapsed
+                    time tracking, question shuffling, and high score logic. I
+                    also enhanced the UI, made it fully responsive, and
+                    optimized it for SEO and social sharing.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <div class="col-md-6 mb-4">
             <div class="project shadow-lg rounded-5">
               <a
@@ -277,9 +307,15 @@
               <div class="card mt-0">
                 <div class="card-body p-3">
                   <h5 class="card-title mb-2">Movie Web App</h5>
-                  <p class="card-text small portifolio-desc">
-                    Taking advantege of the OMDP API, this project was built
-                    with React and allows users to search for and rate movies.
+                  <p class="card-text fs-6 portifolio-desc overflow-auto">
+                    This project was created as an exercise in Jonas
+                    Schmedtmann's React course. I practiced concepts like
+                    useEffect to fetch data from the OMDB API, useState, useRef,
+                    and prop drilling. The app lets users search for movies,
+                    view details, and rate them. I also personally made the
+                    interface fully responsive, which helped me strengthen my
+                    skills with React hooks, API integration, and responsive
+                    design.
                   </p>
                 </div>
               </div>
@@ -301,7 +337,7 @@
               <div class="card mt-0">
                 <div class="card-body p-3">
                   <h5 class="card-title mb-2">Eat and Split Web App</h5>
-                  <p class="card-text small portifolio-desc">
+                  <p class="card-text fs-6 portifolio-desc overflow-auto">
                     Also built with React, this app is designed to make
                     splitting bills with friends easy and stress-free by
                     automatically handling all the calculations for you.
@@ -373,6 +409,44 @@
       </div>
       <!--container-->
     </section>
+
+    <!-- Modal (fora da section portfolio) -->
+    <div
+      class="modal fade"
+      id="portfolioModal"
+      tabindex="-1"
+      aria-labelledby="portfolioModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="portfolioModalLabel"></h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"></button>
+          </div>
+          <div class="modal-body overflow-auto" style="max-height: 70vh">
+            <img
+              id="modal-img"
+              src=""
+              alt=""
+              class="img-fluid mb-3"
+              style="max-width: 100%; height: auto" />
+            <p id="modal-desc"></p>
+            <a
+              id="modal-link"
+              href="#"
+              target="_blank"
+              class="btn btn-primary"
+              rel="noopener noreferrer">
+              Acessar Projeto
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Services  -->
     <section class="services text-bg-dark py-5 position-relative">
