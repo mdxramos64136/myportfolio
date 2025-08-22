@@ -251,12 +251,19 @@ img {
   overflow: hidden;
   text-overflow: ellipsis;
   height: 200px;
-  overflow-y: auto; /* adiciona rolagem se o texto passar */
+  overflow-y: auto;
 }
 
 .project {
+  position: relative;
   border-radius: 0.7rem !important;
   overflow: hidden;
+}
+
+.project > a {
+  outline: 3px solid #7bb0ff !important;
+  outline-offset: 4px;
+  box-shadow: none !important;
 }
 
 .card {
@@ -265,6 +272,15 @@ img {
   background-color: #d5dff9;
 }
 
+@supports selector(:has(*)) {
+  .project:focus-within {
+    outline: none;
+  } /* limpa fallback */
+  .project:has(a:focus-visible) {
+    outline: 3px solid #7bb0ff !important;
+    outline-offset: 4px;
+  }
+}
 @media (prefers-reduced-motion: reduce) {
   .btn,
   .btn::after {
