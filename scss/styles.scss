@@ -3,9 +3,21 @@
 } */
 .header {
   position: relative; /* Essential for the overlay positioning */
-  background: #151515 url("../images/computer.jpg") no-repeat center center;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background: #151515 url("../images/computer.webp") no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
+}
+
+header.header {
+  height: 72px;
+}
+
+img {
+  width: auto;
+  height: auto;
 }
 
 /* Overlay for the header */
@@ -146,8 +158,13 @@
   color: #297bf6;
 }
 
+.btn:active {
+  transform: scale(0.98);
+}
+
 .btn-download {
   background-color: #cedff9 !important;
+  border: 1.5px solid transparent;
   border-radius: 10px !important;
   border-color: #297bf6;
   font-size: 18px !important;
@@ -169,7 +186,6 @@
 .btn-download:hover,
 .btn-download:focus {
   border: 1.5px solid #297bf6 !important;
-  border-color: #297bf6 !important;
   box-shadow: 0 4px 16px rgba(123, 176, 255, 0.95),
     0 1.5px 6px rgba(17, 128, 232, 0.05) !important;
   border-radius: 12px !important;
@@ -206,6 +222,23 @@
 .typing-hidden {
   color: transparent;
   user-select: none;
+}
+
+.btn::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  transform: scale(0);
+  opacity: 0.4;
+  pointer-events: none;
+  transition: transform 0.35s ease, opacity 0.4s ease;
+  background: radial-gradient(circle, #fff 10%, transparent 11%);
+}
+
+.btn:active::after {
+  transform: scale(4);
+  opacity: 0;
 }
 
 .portfolio-img {
@@ -265,6 +298,16 @@
   border-radius: 0 !important;
   border: none !important;
   background-color: #d5dff9;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn,
+  .btn::after {
+    transition: none !important;
+  }
+  .btn:active {
+    transform: none;
+  }
 }
 
 @media (max-width: 767px) {
