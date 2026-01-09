@@ -4,7 +4,7 @@
   "description": "Simple workflow for working with and customizing Bootstrap 5",
   "main": "index.js",
   "scripts": {
-    "sass:build": "sass --no-source-map scss:css",
+    "sass:build": "npx sass --no-source-map scss:css",
     "sass:watch": "sass --no-source-map --watch scss:css"
   },
   "author": "Brad Traversy &  Marcel Ramos",
