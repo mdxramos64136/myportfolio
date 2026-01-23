@@ -246,12 +246,22 @@ img {
   display: block;
 }
 
-.portifolio-desc {
+.portfolio-desc {
   margin-top: 0;
   overflow: hidden;
   text-overflow: ellipsis;
   height: 200px;
   overflow-y: auto;
+}
+
+.portfolio-desc:focus {
+  outline: none;
+}
+
+.portfolio-desc:focus-visible {
+  outline: 3px solid #7bb0ff;
+  outline-offset: 4px;
+  border-radius: 8px;
 }
 
 .project {
@@ -261,9 +271,12 @@ img {
 }
 
 .project > a {
-  outline: 3px solid #7bb0ff !important;
+  outline: none;
+}
+
+.project > a:focus-visible {
+  outline: 3px solid #7bb0ff;
   outline-offset: 4px;
-  box-shadow: none !important;
 }
 
 .card {
