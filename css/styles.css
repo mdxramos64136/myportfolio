@@ -285,6 +285,10 @@ img {
   background-color: #d5dff9;
 }
 
+.hero-text {
+  text-align: justify;
+}
+
 @supports selector(:has(*)) {
   .project:focus-within {
     outline: none;
@@ -323,5 +327,10 @@ img {
     border-bottom: var(--bs-dark) solid 1px;
     padding-bottom: 20px;
     color: #7bb0ff !important;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 1300px;
   }
 }
