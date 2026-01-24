@@ -20,6 +20,16 @@ img {
   height: auto;
 }
 
+.about-left {
+  flex: 0 0 380px;
+}
+
+.card {
+  border-radius: 0 !important;
+  border: none !important;
+  background-color: #d5dff9;
+}
+
 /* Overlay for the header */
 .header::after {
   content: "";
@@ -54,10 +64,8 @@ img {
   position: absolute;
 }
 
-.about-img {
-  width: 350px;
-  height: 350px;
-  object-fit: cover;
+.justify-text {
+  text-align: justify;
 }
 
 .project:hover {
@@ -280,14 +288,14 @@ img {
   outline-offset: 4px;
 }
 
-.card {
-  border-radius: 0 !important;
-  border: none !important;
-  background-color: #d5dff9;
+/*Section shadow*/
+/* Section shadow (works everywhere, no ::after conflicts) */
+.section-divider {
+  box-shadow: inset 0px -24px 14px -14px rgba(146, 197, 231, 0.783);
 }
 
-.justify-text {
-  text-align: justify;
+.section-divider-clear {
+  box-shadow: inset 0px -24px 14px -14px rgba(208, 227, 239, 0.958);
 }
 
 @supports selector(:has(*)) {
