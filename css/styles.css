@@ -295,7 +295,7 @@ img {
 }
 
 .section-divider-clear {
-  box-shadow: inset 0px -24px 14px -14px rgba(208, 227, 239, 0.958);
+  box-shadow: inset 0px -24px 14px -14px rgba(81, 166, 245, 0.658);
 }
 
 @supports selector(:has(*)) {

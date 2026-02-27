@@ -265,7 +265,8 @@ img {
 }
 
 // object-fit: cover - a img preenche todo o  espaço, mantém a
-// proporção, mas corta as sobras.
+// proporção, mas CORTA as sobras.
+// Já contain preenche o box sem cortar.
 // object-fit: contain - Mostra a imagem inteira, sem cortes, mas
 // pode sobrar espaço vazio (com “faixas” laterais ou acima/abaixo).
 //Não fica padronizado.
@@ -322,7 +323,7 @@ img {
 }
 
 .section-divider-clear {
-  box-shadow: inset 0px -24px 14px -14px rgba(208, 227, 239, 0.958);
+  box-shadow: inset 0px -24px 14px -14px rgba(81, 166, 245, 0.658);
 }
 
 // .section-divider {
